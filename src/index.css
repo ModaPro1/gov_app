@@ -75,7 +75,7 @@ body {
   background: var(--main-color);
 }
 .page .bg {
-  background-image: url(/src/assets/bg-banner.jpg);
+  background-image: url(/src/assets/bg-banner-small.jpg);
   filter: brightness(0.5);
   position: absolute;
   width: 100%;

@@ -53,9 +53,9 @@ export default function NavbarAlt() {
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/#contact">
+              <HashLink className="nav-link" to="/#contact">
                 تواصل معنا
-              </NavLink>
+              </HashLink>
             </li>
           </ul>
         </div>
