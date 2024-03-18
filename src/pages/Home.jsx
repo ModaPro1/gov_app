@@ -12,7 +12,7 @@ export default function Home() {
 
   useEffect(() => {
     let lang = localStorage.getItem("lang")
-    if(!lang) {
+    if(!lang || lang == 'ar-SA') {
       navigate('/?lng=ar-SA')
     }
   }, [])

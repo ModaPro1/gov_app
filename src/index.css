@@ -108,17 +108,7 @@ body {
   gap: 5px 20px;
 }
 *::-webkit-media-controls-panel {
-  display: none!important;
-  -webkit-appearance: none;
-}
-
-*::-webkit-media-controls-play-button {
-  display: none!important;
-  -webkit-appearance: none;
-}
-
-*::-webkit-media-controls-start-playback-button {
-  display: none!important;
+  display: none !important;
   -webkit-appearance: none;
 }
 /* About Section */

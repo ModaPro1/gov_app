@@ -36,7 +36,9 @@ export default function App() {
         loadPath: loadPath
       }
     })
-    .then(() => setAppLoaded(true))
+    .then(() => {
+      setAppLoaded(true)
+    })
   }, [])
 
   const router = createBrowserRouter([
