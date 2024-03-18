@@ -107,10 +107,6 @@ body {
 .navbar .navbar-nav {
   gap: 5px 20px;
 }
-*::-webkit-media-controls-panel {
-  display: none !important;
-  -webkit-appearance: none;
-}
 /* About Section */
 .about::after {
   content: "";
