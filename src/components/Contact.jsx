@@ -91,12 +91,9 @@ export default function Contact() {
           className="form bg-white shadow-sm rounded-3 p-3 d-flex gap-3"
           ref={formEl}
         >
-          <div className="img">
-            <img src={contactImg} alt="IMAGE" />
-          </div>
           <div className="content pt-3">
             <div className="input-box">
-              <label htmlFor="name" className="mb-1">
+              <label htmlFor="name" className="mb-1 fw-semibold">
                 الأسم
               </label>
               <input
@@ -112,7 +109,7 @@ export default function Contact() {
               {formData.name.error && <div className="error text-danger">{formData.name.error}</div>}
             </div>
             <div className="input-box mt-3">
-              <label htmlFor="email" className="mb-1">
+              <label htmlFor="email" className="mb-1 fw-semibold">
                 البريد الالكتروني
               </label>
               <input
@@ -128,7 +125,7 @@ export default function Contact() {
               {formData.email.error && <div className="error text-danger">{formData.email.error}</div>}
             </div>
             <div className="input-box mt-3">
-              <label htmlFor="message" className="mb-1">
+              <label htmlFor="message" className="mb-1 fw-semibold">
                 الرسالة
               </label>
               <textarea

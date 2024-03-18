@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
 
 :root {
   --main-color: #131841;
@@ -10,10 +10,12 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
-  font-family: "Cairo", sans-serif;
+  font-family: "Tajawal", sans-serif;
+  overflow-x: hidden;
 }
 
 .nav-link {
@@ -95,7 +97,16 @@ body {
   z-index: 10;
   position: relative;
 }
-
+.navbar .nav-link i {
+  color: #6b6b6b;
+  font-size: 16px;
+}
+.navbar .nav-link {
+  font-size: 1.0625rem;
+}
+.navbar .navbar-nav {
+  gap: 5px 20px;
+}
 /* About Section */
 .about::after {
   content: "";
@@ -201,6 +212,9 @@ body {
 
 /* Numbers Section */
 
+.numbers {
+  background-color: var(--main-color);
+}
 .numbers .boxes {
   width: 800px;
   justify-content: center;
@@ -208,13 +222,16 @@ body {
 .numbers .box {
   text-align: center;
 }
+.numbers .box img {
+  width: 50px;
+}
 .numbers .box .title {
   font-size: 30px;
-  color: var(--main-color);
   font-weight: 700;
+  color: #c9c9c9;
 }
 .numbers .box .text {
-  color: #3e3e3e;
+  color: #fff;
 }
 @media (max-width: 991px) {
   .numbers .boxes {

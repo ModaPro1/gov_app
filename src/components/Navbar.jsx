@@ -20,39 +20,40 @@ export default function Navbar() {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav mb-2 ms-auto mb-lg-0">
+          <ul className="navbar-nav mb-2 ms-5 mb-lg-0 d-flex flex-wrap">
             <li className="nav-item">
               <NavLink className="nav-link" to="#">
+                <i className="fa-solid fa-house me-2"></i>
                 الرئيسية
               </NavLink>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#about">
+                <i className="fa-solid fa-address-card me-2"></i>
                 نبذه عن المؤسسة
               </a>
             </li>
-            {/* <li className="nav-item">
-              <NavLink className="nav-link" to="/test">
-                الرؤية
-              </NavLink>
-            </li> */}
             <li className="nav-item">
               <NavLink className="nav-link" to="/goals">
+              <i className="fa-solid fa-calendar-check me-2"></i>
                 الأهداف والمهام
               </NavLink>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#services">
+              <i className="fa-solid fa-briefcase me-2"></i>
                 الخدمات
               </a>
             </li>
             <li className="nav-item">
               <NavLink className="nav-link" to="/gallary">
+              <i className="fa-solid fa-image me-2"></i>
                 مكتبة الصور
               </NavLink>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#contact">
+                <i className="fa-solid fa-envelope me-2"></i>
                 تواصل معنا
               </a>
             </li>
