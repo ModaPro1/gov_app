@@ -12,7 +12,7 @@ export default function Landing() {
     videoEl.current.play()
   }, [])
 
-  return (
+  return ( 
     <div className={classes.landing}>
       <video className={classes.video} muted loop ref={videoEl}>
         <source src={video} type="video/mp4" />
