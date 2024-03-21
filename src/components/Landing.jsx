@@ -1,6 +1,6 @@
 import classes from "./Landing.module.css";
 import arrow from '../assets/arrow.svg'
-import video from '../assets/bg-video.mp4'
+import video from '../assets/bg-video-short.mp4'
 import { useTranslation } from "react-i18next";
 import { useEffect, useRef } from "react";
 
@@ -14,7 +14,7 @@ export default function Landing() {
 
   return (
     <div className={classes.landing}>
-      <video className={classes.video} controls={false} muted loop ref={videoEl}>
+      <video className={classes.video} muted loop ref={videoEl}>
         <source src={video} type="video/mp4" />
         Your browser does not support HTML video.
       </video>
