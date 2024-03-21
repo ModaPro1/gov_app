@@ -14,7 +14,7 @@ export default function Landing() {
 
   return ( 
     <div className={classes.landing}>
-      <video className={classes.video} muted loop ref={videoEl}>
+      <video className={classes.video} type="video/mp4" playsInline autoPlay={true} muted loop ref={videoEl}>
         <source src={video} type="video/mp4" />
         Your browser does not support HTML video.
       </video>

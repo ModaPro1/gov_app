@@ -38,6 +38,7 @@ export default function App() {
     })
     .then(() => {
       setAppLoaded(true)
+      localStorage.setItem('i18nextLng', 'ar-SA')
     })
   }, [])
 
