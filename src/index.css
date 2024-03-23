@@ -454,3 +454,14 @@ footer {
   /* opacity: .5; */
   cursor: no-drop;
 }
+@media (max-width: 767px) {
+  .news .box {
+    flex-direction: column-reverse;
+  }
+  .news .box .controls {
+    top: 0;
+  }
+  .news .box img {
+    width: 100%;
+  }
+}
