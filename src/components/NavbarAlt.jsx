@@ -53,10 +53,10 @@ export default function NavbarAlt() {
               </NavLink>
             </li>
             <li className="nav-item">
-              <HashLink className="nav-link" to="/#contact">
-                <i className="fa-solid fa-envelope me-2"></i>
-                تواصل معنا
-              </HashLink>
+              <NavLink className="nav-link" to="/skeleton">
+              <i className="fa-solid fa-list me-2"></i>
+                الهيكل التنظيمي
+              </NavLink>
             </li>
           </ul>
         </div>
