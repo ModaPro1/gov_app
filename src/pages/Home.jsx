@@ -6,6 +6,9 @@ import Landing from "../components/Landing";
 import Numbers from "../components/Numbers";
 import Services from "../components/Services";
 import { useNavigate } from "react-router-dom";
+import Partners from "../components/Partners";
+import TheWord from "../components/TheWord";
+import News from "../components/News";
 
 export default function Home() {
   const navigate = useNavigate()
@@ -21,9 +24,11 @@ export default function Home() {
     <>
       <Landing />
       <About />
+      <TheWord />
       <Services />
+      <Partners />
       <Numbers />
-      <Contact />
+      <News />
       <Footer />
     </>
   )

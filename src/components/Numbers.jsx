@@ -3,12 +3,18 @@ import MainTitle from "./MainTitle";
 import people from '../assets/numbers/people.svg'
 import note from '../assets/numbers/note.svg'
 import location from '../assets/numbers/location.svg'
+import { useLocation } from "react-router-dom";
 
 export default function Numbers() {
   const numbersSection = useRef();
-  
+  const router = useLocation()
+
   useEffect(() => {
     const goals = document.querySelectorAll(".goal")
+    if(!router.pathname == "/") {
+      return;
+    }
+
     document.addEventListener('scroll', () => {
       if (window.scrollY > numbersSection.current.offsetTop - 700) {
         goals.forEach(goal => {
@@ -32,7 +38,7 @@ export default function Numbers() {
   return (
     <div ref={numbersSection} className="numbers pt-4 pb-5">
       <MainTitle classes="margin white" color="#fff">الأوقاف في أرقام</MainTitle>
-      <div className="boxes d-flex gap-5 mt-5 mx-auto">
+      <div className="boxes d-flex gap-2 gap-md-5 mt-5 mx-auto">
         <div className="box">
           <img src={note} alt="LOGO" />
           <div className="title goal" data-target="28">0</div>

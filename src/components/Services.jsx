@@ -12,7 +12,7 @@ export default function Services() {
           <MainTitle classes="mt-3 border-gray">الخدمات</MainTitle>
           <div className="boxes mt-5 row g-3">
           <div className="col-lg-3 col-md-6">
-              <div className="box shadow p-4 rounded-3 bg-white text-center h-100" data-aos="fade-up" data-aos-duration="500">
+              <div className="box shadow p-4 rounded-3 bg-white text-center h-100" data-aos="fade-up" data-aos-duration="500" data-aos-offset="-10">
                 <img src={image4} alt="IMAGE" width={90} />
                 <h4 className="mt-3 fw-semibold">برنامج الاقتراع </h4>
                 <p className="mb-0 text-muted font-semibold">
@@ -22,17 +22,7 @@ export default function Services() {
               </div>
             </div>
             <div className="col-lg-3 col-md-6">
-              <div className="box shadow p-4 rounded-3 bg-white text-center h-100" data-aos="fade-up" data-aos-duration="700">
-                <img src={image3} alt="IMAGE" width={90} />
-                <h4 className="mt-3 fw-semibold">الاستقبال</h4>
-                <p className="mb-0 text-muted font-semibold">
-                  تخصيص فريق لتوديع لاستقبال الحجاج من المشاعر مع تأكيد من طرف
-                  كل جهات المختصة .
-                </p>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6">
-              <div className="box shadow p-4 rounded-3 bg-white text-center h-100" data-aos="fade-up" data-aos-duration="900">
+              <div className="box shadow p-4 rounded-3 bg-white text-center h-100" data-aos="fade-up" data-aos-duration="700" data-aos-offset="-10">
                 <img src={image1} alt="IMAGE" width={90} />
                 <h4 className="mt-3 fw-semibold">برنامج الاسكان</h4>
                 <p className="mb-0 text-muted font-semibold">
@@ -43,7 +33,17 @@ export default function Services() {
               </div>
             </div>
             <div className="col-lg-3 col-md-6">
-              <div className="box shadow p-4 rounded-3 bg-white text-center h-100" data-aos="fade-up" data-aos-duration="1100">
+              <div className="box shadow p-4 rounded-3 bg-white text-center h-100" data-aos="fade-up" data-aos-duration="900" data-aos-offset="-10">
+                <img src={image3} alt="IMAGE" width={90} />
+                <h4 className="mt-3 fw-semibold">الاستقبال</h4>
+                <p className="mb-0 text-muted font-semibold">
+                  تخصيص فريق لتوديع لاستقبال الحجاج من المشاعر مع تأكيد من طرف
+                  كل جهات المختصة .
+                </p>
+              </div>
+            </div>
+            <div className="col-lg-3 col-md-6">
+              <div className="box shadow p-4 rounded-3 bg-white text-center h-100" data-aos="fade-up" data-aos-duration="1100" data-aos-offset="-10">
                 <img src={image2} alt="IMAGE" width={90} />
                 <h4 className="mt-3 fw-semibold">برنامج سياحي</h4>
                 <p className="mb-0 text-muted font-semibold">

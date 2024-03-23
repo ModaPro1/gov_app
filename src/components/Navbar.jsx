@@ -1,9 +1,9 @@
 import { Link, NavLink } from "react-router-dom";
-import logo from "../assets/logo-alt.png";
+import logo from "../assets/logo-white.png";
 
 export default function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg bg-white">
+    <nav className="navbar navbar-expand-lg landing-navbar py-4" data-bs-theme="dark">
       <div className="container">
         <Link className="navbar-brand pt-0" to="/">
           <img src={logo} alt="LOGO" width={200} />
@@ -52,10 +52,10 @@ export default function Navbar() {
               </NavLink>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#contact">
-                <i className="fa-solid fa-envelope me-2"></i>
-                تواصل معنا
-              </a>
+              <NavLink className="nav-link" to="/skeleton">
+              <i className="fa-solid fa-list me-2"></i>
+                الهيكل التنظيمي
+              </NavLink>
             </li>
           </ul>
         </div>
