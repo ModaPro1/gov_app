@@ -424,6 +424,9 @@ footer {
   /* background-color: #ddd; */
 }
 @media (max-width: 991px) {
+  .word-section img {
+    margin: auto;
+  }
   .word-section .content {
     flex-direction: column;
   }
