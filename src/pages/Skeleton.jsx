@@ -8,7 +8,7 @@ export default function Skeleton() {
           <div className="box">
             <img src="/leaders/5.jpeg" alt="Leader" width={200} height={200} className="rounded-3" />
             <div className="title">
-              <span>الناظر السابق</span> / المرحوم محمد مضر الشريف
+              <span>الناظر السابق 1417 - 1400هـ </span> / المرحوم محمد مضر الشريف
             </div>
           </div>
         </div>
