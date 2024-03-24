@@ -4,29 +4,31 @@ export default function Skeleton() {
   return (
     <PagesLayout pageClass="skeleton" title="الهيكل التنظيمي">
       <div className="boxes shadow-sm p-4 rounded-3">
-        <div className="d-flex gap-3 justify-content-center row-content">
+      <div className="d-flex gap-3 justify-content-center row-content">
           <div className="box">
-            <img src="/leaders/1.jpeg" alt="Leader" width={200} height={200} className="rounded-3" />
+            <img src="/leaders/5.jpeg" alt="Leader" width={200} height={200} className="rounded-3" />
             <div className="title">
-              <span>ناظر الوقف</span> / حسين محمد مضر الشريف
+              <span>الناظر السابق</span> / المرحوم محمد مضر الشريف
             </div>
           </div>
+        </div>
+        <div className="d-flex gap-3 justify-content-center row-content mt-3 pt-3 flex-wrap">
           <div className="box">
-            <img src="/leaders/2.jpeg" alt="Leader" width={200} height={200} className="rounded-3" />
+            <img src="/leaders/1.jpeg" alt="Leader" width={190} height={190} className="rounded-3" />
             <div className="title">
-              <span>ناظر الوقف</span> / يوسف عوض الأحمدي
+              <span>ناظر الوقف</span> / حسين محمد مضر الشريف
               <br />
               <span>المدير و الوكيل المفوض</span>
             </div>
           </div>
           <div className="box">
-            <img src="/leaders/man.jpg" alt="Leader" width={200} height={200} className="rounded-3" />
+            <img src="/leaders/4.jpeg" alt="Leader" width={190} height={190} className="rounded-3" />
             <div className="title">
-              <span>مشرف قانوني</span> / محمد حسين الشريف
+              <span>ناظر الوقف</span> / يوسف عوض الأحمدي
             </div>
           </div>
         </div>
-        <div className="d-flex gap-3 justify-content-center row-content mt-3 pt-3">
+        <div className="d-flex gap-3 justify-content-center row-content mt-3 pt-3 flex-wrap">
           <div className="box">
             <img src="/leaders/man.jpg" alt="Leader" width={170} height={170} className="rounded-3" />
             <div className="title">
@@ -34,13 +36,19 @@ export default function Skeleton() {
             </div>
           </div>
           <div className="box">
-            <img src="/leaders/3.jpeg" alt="Leader" width={170} height={170} className="rounded-3" />
+            <img src="/leaders/2.jpeg" alt="Leader" width={170} height={170} className="rounded-3" />
             <div className="title">
               <span>المشرف المالي</span> / نزار بخش
             </div>
           </div>
+          <div className="box">
+            <img src="/leaders/3.jpeg" alt="Leader" width={170} height={170} className="rounded-3" />
+            <div className="title">
+              <span>مشرف قانوني</span> / محمد حسين الشريف
+            </div>
+          </div>
         </div>
-        <div className="d-flex justify-content-center row-content flex-1 mt-3 pt-3">
+        {/* <div className="d-flex justify-content-center row-content flex-1 mt-3 pt-3">
           <div className="box">
             <img src="/leaders/man.jpg" alt="Leader" width={150} height={150} className="rounded-3" />
             <div className="title">
@@ -71,7 +79,7 @@ export default function Skeleton() {
               <span>مساعد إداري</span> / إسماعيل منظور بخش
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </PagesLayout>
   )
