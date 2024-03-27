@@ -1,8 +1,12 @@
+import { useTranslation } from "react-i18next";
 import PagesLayout from "../layouts/PagesLayout";
 
 export default function Skeleton() {
+
+  const {t} = useTranslation()
+
   return (
-    <PagesLayout pageClass="skeleton" title="الهيكل التنظيمي">
+    <PagesLayout pageClass="skeleton" title={t('nav_6')}>
       <div className="boxes shadow-sm p-4 rounded-3">
       <div className="d-flex gap-3 justify-content-center row-content">
           <div className="box">

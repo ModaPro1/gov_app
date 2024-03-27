@@ -1,7 +1,9 @@
 import { Link, NavLink } from "react-router-dom";
 import logo from "../assets/logo-white.png";
+import { useTranslation } from "react-i18next";
 
 export default function Navbar() {
+  const {t} = useTranslation()
   return (
     <nav className="navbar navbar-expand-lg landing-navbar py-4" data-bs-theme="dark">
       <div className="container">
@@ -24,37 +26,37 @@ export default function Navbar() {
             <li className="nav-item">
               <NavLink className="nav-link" to="#">
                 <i className="fa-solid fa-house me-2"></i>
-                الرئيسية
+                {t('nav_1')}
               </NavLink>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#about">
                 <i className="fa-solid fa-address-card me-2"></i>
-                نبذه عن المؤسسة
+                {t('nav_2')}
               </a>
             </li>
             <li className="nav-item">
               <NavLink className="nav-link" to="/goals">
               <i className="fa-solid fa-calendar-check me-2"></i>
-                الأهداف والمهام
+              {t('nav_3')}
               </NavLink>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#services">
               <i className="fa-solid fa-briefcase me-2"></i>
-                الخدمات
+              {t('nav_4')}
               </a>
             </li>
             <li className="nav-item">
               <NavLink className="nav-link" to="/gallary">
               <i className="fa-solid fa-image me-2"></i>
-                مكتبة الصور
+              {t('nav_5')}
               </NavLink>
             </li>
             <li className="nav-item">
               <NavLink className="nav-link" to="/skeleton">
               <i className="fa-solid fa-list me-2"></i>
-                الهيكل التنظيمي
+              {t('nav_6')}
               </NavLink>
             </li>
           </ul>

@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import MainTitle from "./MainTitle";
 
 export default function Partners() {
@@ -63,10 +64,12 @@ export default function Partners() {
       width: 120,
     },
   ];
+  const {t} = useTranslation()
+
 
   return (
     <div className="partners pt-4 pb-5">
-      <MainTitle>شركاء النجاح</MainTitle>
+      <MainTitle>{t('partners_section_title')}</MainTitle>
       <div className="boxes mt-5">
         <div className="content">
           {partners.map((item) => {

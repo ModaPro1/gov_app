@@ -1,27 +1,24 @@
-import { useEffect } from "react";
 import About from "../components/About";
-import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import Landing from "../components/Landing";
 import Numbers from "../components/Numbers";
 import Services from "../components/Services";
-import { useNavigate } from "react-router-dom";
 import Partners from "../components/Partners";
 import TheWord from "../components/TheWord";
 import News from "../components/News";
+import { useContext } from "react";
+import { langContext } from "../store/LangContext";
+import { useLocation } from "react-router-dom";
+import Navbar from "../components/Navbar";
+import NavbarAlt from "../components/NavbarAlt";
 
 export default function Home() {
-  const navigate = useNavigate()
-
-  useEffect(() => {
-    let lang = localStorage.getItem("lang")
-    if(!lang || lang == 'ar-SA') {
-      navigate('/?lng=ar-SA')
-    }
-  }, [])
+  const { lang } = useContext(langContext);
+  const router = useLocation()
 
   return (
-    <>
+    <div className={lang}>
+      {router.pathname == "/" ? <Navbar /> : <NavbarAlt />}
       <Landing />
       <About />
       <TheWord />
@@ -30,6 +27,6 @@ export default function Home() {
       <Numbers />
       <News />
       <Footer />
-    </>
-  )
+    </div>
+  );
 }

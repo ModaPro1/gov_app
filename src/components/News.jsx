@@ -1,21 +1,21 @@
+import { useTranslation } from "react-i18next";
 import MainTitle from "./MainTitle";
 
 export default function News() {
+  const {t} = useTranslation()
+
   return (
-    <div className="news py-4">
-      <MainTitle classes="border-gray">الأخبار</MainTitle>
+    <div className='news py-4'>
+      <MainTitle classes="border-gray">{t('news_section_title')}</MainTitle>
       <div className="container">
         <div className="box mt-5 d-flex gap-5 position-relative">
           <div className="position-relative">
             <div className="controls d-flex gap-3">
-              <i class="fa-solid fa-arrow-right disabled"></i>
-              <i class="fa-solid fa-arrow-left disabled"></i>
+              <i className="fa-solid fa-arrow-right disabled"></i>
+              <i className="fa-solid fa-arrow-left disabled"></i>
             </div>
             <p className="mt-5">
-              الناظر / حسين محمد مضر الشريف نحنُ في طور الاستعداد والتأمين لموسم
-              حج 1445هـ . ونقوم بالتنسيق مع حكومة تيلانجانا والمسؤول التنفيذي
-              للبعثة الهندية للحج لإجراء القرعة الالكترونية في حيدر آباد لترشيح
-              الحجاج المستحقين بعناية وضمان جودة شفافية الاقتراع .
+              {t('news_1')}
             </p>
           </div>
           <img

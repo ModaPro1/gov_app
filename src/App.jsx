@@ -1,5 +1,4 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import Layout from "./layouts/Layout";
 import Home from "./pages/Home";
 import Goals from "./pages/Goals";
 import Gallary from "./pages/Gallary";
@@ -12,50 +11,54 @@ import HttpBackend from "i18next-http-backend";
 import LanguageDetector from "i18next-browser-languagedetector";
 import { initReactI18next } from "react-i18next";
 import Skeleton from "./pages/Skeleton";
+import { LangCtxProvider } from "./store/LangContext";
 
 const apiKey = "bXlmtUZemRUeq9VZxfTWSA";
 const loadPath = `https://api.i18nexus.com/project_resources/translations/{{lng}}/{{ns}}.json?api_key=${apiKey}`;
 
-
 export default function App() {
-  const [appLoaded, setAppLoaded] = useState(false)
+  const [appLoaded, setAppLoaded] = useState(false);
   useEffect(() => {
     Aos.init();
     i18next
-    .use(HttpBackend)
-    .use(LanguageDetector)
-    .use(initReactI18next)
-    .init({
-      fallbackLng: "ar-SA",
+      .use(HttpBackend)
+      .use(LanguageDetector)
+      .use(initReactI18next)
+      .init({
+        fallbackLng: "ar-SA",
 
-      ns: ["default"],
-      defaultNS: "default",
+        ns: ["default"],
+        defaultNS: "default",
 
-      supportedLngs: ["ar-SA", "en"],
-      
-      backend: {
-        loadPath: loadPath
-      }
-    })
-    .then(() => {
-      setAppLoaded(true)
-      localStorage.setItem('i18nextLng', 'ar-SA')
-    })
-  }, [])
+        supportedLngs: ["ar-SA", "en"],
+
+        backend: {
+          loadPath: loadPath,
+        },
+      })
+      .then(() => {
+        setAppLoaded(true);
+      });
+  }, []);
 
   const router = createBrowserRouter([
     {
       path: "/",
       errorElement: <NotFound />,
-      element: <Layout />,
       children: [
         { index: true, element: <Home /> },
-        { path: '/goals', element: <Goals /> },
-        { path: '/gallary', element: <Gallary /> },
-        { path: '/skeleton', element: <Skeleton /> },
-      ]
+        { path: "/goals", element: <Goals /> },
+        { path: "/gallary", element: <Gallary /> },
+        { path: "/skeleton", element: <Skeleton /> },
+      ],
     },
   ]);
 
-  return appLoaded && <RouterProvider router={router} />
+  return (
+    appLoaded && (
+      <LangCtxProvider>
+        <RouterProvider router={router} />
+      </LangCtxProvider>
+    )
+  );
 }
