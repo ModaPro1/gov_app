@@ -22,7 +22,7 @@ export default function Landing() {
     <>
       <div className="banner p-2">
         <div className="container">
-          <a href="" onClick={changeAppLanguage}>{ctx.lang === "en" ? "Ar" : "En"}</a>
+          <a href="" onClick={changeAppLanguage}>{ctx.lang === "en" ? "عربي" : "English"}</a>
         </div>
       </div>
       <div className={classes.landing}>

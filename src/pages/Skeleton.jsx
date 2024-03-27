@@ -18,6 +18,12 @@ export default function Skeleton() {
         </div>
         <div className="d-flex gap-3 justify-content-center row-content mt-3 pt-3 flex-wrap">
           <div className="box">
+            <img src="/leaders/4.jpeg" alt="Leader" width={190} height={190} className="rounded-3" />
+            <div className="title">
+              <span>ناظر الوقف</span> / يوسف عوض الأحمدي
+            </div>
+          </div>
+          <div className="box">
             <img src="/leaders/1.jpeg" alt="Leader" width={190} height={190} className="rounded-3" />
             <div className="title">
               <span>ناظر الوقف</span> / حسين محمد مضر الشريف
@@ -25,16 +31,10 @@ export default function Skeleton() {
               <span>المدير و الوكيل المفوض</span>
             </div>
           </div>
-          <div className="box">
-            <img src="/leaders/4.jpeg" alt="Leader" width={190} height={190} className="rounded-3" />
-            <div className="title">
-              <span>ناظر الوقف</span> / يوسف عوض الأحمدي
-            </div>
-          </div>
         </div>
         <div className="d-flex gap-3 justify-content-center row-content mt-3 pt-3 flex-wrap">
           <div className="box">
-            <img src="/leaders/man.jpg" alt="Leader" width={170} height={170} className="rounded-3" />
+            <img src="/leaders/6.jpeg" alt="Leader" width={170} height={170} className="rounded-3" />
             <div className="title">
               <span>مشرف تعقيب الحكومي</span> / محمد سالم
             </div>
@@ -42,13 +42,13 @@ export default function Skeleton() {
           <div className="box">
             <img src="/leaders/2.jpeg" alt="Leader" width={170} height={170} className="rounded-3" />
             <div className="title">
-              <span>المشرف المالي</span> / نزار بخش
+              <span>أخصائي الميزانية والمالية</span> / نزار بخش
             </div>
           </div>
           <div className="box">
             <img src="/leaders/3.jpeg" alt="Leader" width={170} height={170} className="rounded-3" />
             <div className="title">
-              <span>مشرف قانوني</span> / محمد حسين الشريف
+              <span>مشرف العلاقات الحكومية</span> / محمد حسين
             </div>
           </div>
         </div>

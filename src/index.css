@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
 
 :root {
   --main-color: #131841;
@@ -9,7 +9,7 @@
 }
 .ar-SA .me-2 {
   margin-right: 0 !important;
-  margin-left: .5rem !important;
+  margin-left: 0.5rem !important;
 }
 .ar-SA .banner {
   text-align: left;
@@ -30,13 +30,13 @@ body {
   width: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; 
+  background: #f1f1f1;
 }
 ::-webkit-scrollbar-thumb {
-  background: #888; 
+  background: #888;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: #555;
 }
 
 .nav-link {
@@ -118,7 +118,10 @@ body {
   position: relative;
 }
 .banner {
-  background-color: var(--main-color);
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+  border-bottom: 1px solid #b0b0b04d;
 }
 .banner a {
   color: #fff;
@@ -220,7 +223,8 @@ body {
 
 /* Gallary Page */
 @keyframes flashing {
-  0%, 40% {
+  0%,
+  40% {
     opacity: 1;
   }
   100% {
@@ -237,7 +241,7 @@ body {
   height: 300px;
 }
 .gallary .boxes .img img {
-  transition: .3s;
+  transition: 0.3s;
   object-fit: cover;
 }
 .gallary .title {
@@ -338,13 +342,13 @@ body {
   font-weight: 700;
   gap: 10px;
   align-items: center;
-  transition: .3s;
+  transition: 0.3s;
 }
 .contact .send:hover {
   background-color: #17205f;
 }
 .contact .send:disabled {
-  opacity: .7;
+  opacity: 0.7;
 }
 .contact .input-box {
   position: relative;
@@ -375,26 +379,26 @@ body {
   user-select: none;
   display: flex;
   mask-image: linear-gradient(
-		to right,
-		hsl(0 0% 0% / 0),
-		hsl(0 0% 0% / 1) 20%,
-		hsl(0 0% 0% / 1) 80%,
-		hsl(0 0% 0% / 0)
-	);
+    to right,
+    hsl(0 0% 0% / 0),
+    hsl(0 0% 0% / 1) 20%,
+    hsl(0 0% 0% / 1) 80%,
+    hsl(0 0% 0% / 0)
+  );
   direction: rtl;
 }
 .partners .boxes .content {
   flex-shrink: 0;
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	gap: 1rem;
-	min-width: 100%;
-	animation: loop 20s linear infinite;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+  min-width: 100%;
+  animation: loop 20s linear infinite;
 }
 .partners .boxes img {
   display: block;
-	margin-inline: 2rem;
+  margin-inline: 2rem;
 }
 @keyframes loop {
   from {
@@ -424,14 +428,14 @@ body {
 .skeleton .boxes .box img {
   object-fit: cover;
   margin-bottom: 10px;
-  background-color: #C9CCD1;
+  background-color: #c9ccd1;
 }
 .skeleton .boxes .box .title {
   color: #878787;
 }
 .skeleton .boxes .box .title span {
   color: #c1c1c1;
-  font-weight: 500 ;
+  font-weight: 500;
 }
 
 @media (max-width: 991px) {
@@ -442,7 +446,7 @@ body {
     flex-direction: column;
   }
 }
-.word-section .text  {
+.word-section .text {
   font-weight: 500;
 }
 
@@ -509,7 +513,7 @@ body {
 
 .footer .links a i {
   margin-left: 5px;
-  transition: .3s;
+  transition: 0.3s;
   color: #89b7c3;
 }
 .en .footer .links a i {
