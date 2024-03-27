@@ -169,6 +169,13 @@ body {
   left: 0;
   bottom: -100px;
 }
+.about .video {
+  height: 400px;
+}
+.about .video iframe {
+  width: 100%;
+  height: 100%;
+}
 .about .section-data {
   width: 900px;
   margin: auto;
@@ -243,6 +250,9 @@ body {
 .gallary .boxes .img img {
   transition: 0.3s;
   object-fit: cover;
+}
+.gallary .boxes .img img.no-fit {
+  object-fit: fill;
 }
 .gallary .title {
   font-size: 25px;

@@ -87,7 +87,7 @@ export default function Gallary() {
                 <img
                   src="/gallary/random (1).jpeg"
                   alt="IMAGE"
-                  className="w-100 h-100"
+                  className="w-100 h-100 no-fit"
                 />
               </div>
               <div className="title mt-1">{t('gallary_1')}</div>
@@ -97,7 +97,7 @@ export default function Gallary() {
                 <img
                   src="/gallary/random (2).jpeg"
                   alt="IMAGE"
-                  className="w-100 h-100"
+                  className="w-100 h-100 no-fit"
                 />
               </div>
               <div className="title mt-1">
